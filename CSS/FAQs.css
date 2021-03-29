@@ -1,0 +1,97 @@
+.login{
+    background: #eff1f5;
+
+}
+.spad{
+    padding: 30px 0 60px;
+}
+*, ::after,::before{
+    box-sizing: border-box;
+}
+.body{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.faq-title {
+    border-bottom: 1px solid #ececec;
+    padding: 33px 30px;
+}
+.faq-title span {
+    display: inline-block;
+    color: #0674ec;
+    font-size: 20px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+.normal__breadcrumb__text ul li::after
+{
+    content: "|";
+    color: white;
+    padding:  0px px;
+}
+.normal__breadcrumb__text ul li:last-child::after
+{
+    display: none;
+}
+.normal__breadcrumb__text ul li {
+    display: inline-block;
+}
+.normal-breadcrumb .normal__breadcrumb__text ul li a{
+    line-height: initial;
+}
+.normal__breadcrumb__text ul li a {
+    font-size: 15px;
+    line-height: 70px;
+    color: #fff;
+}
+.faq-title h4 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--p);
+}
+ .faq--sidebar .sidebar-card .card-content {
+    padding: 20px 0 ;
+}
+.div-list-dot {
+    color: #c5cad4;
+    margin: 6px 10px 0 0;
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.faq--sidebar .faq--card .card-content li a{
+    color: black;
+    line-height: 28px;
+}
+.faq--sidebar .faq--card .card-content a {
+    font-size: 18px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+.faq--sidebar .faq--card .card-content li{
+    position: relative;
+    margin-bottom: 20px;
+}

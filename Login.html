@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Anime Template">
+        <meta name="keywords" content="Anime, unica, creative, html">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="CSS/login.css" type="text/css">
+        <link rel="stylesheet" href="CSS/Style.css" type="text/css">
+        <link rel="stylesheet" href="JS/RollUpButton.js">        
+        <script src="JS/Login.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header__logo ">
+                            <a href="index.html">
+                                <img src="./Images/logo.png"  class="header__logo ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="header__nav">
+                            <nav class="header__menu mobile-menu">
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="Categories.html">Categories</a>
+                                        <ul class="dropdown">
+                                            <li><a href="Categories.html">Action</a></li>
+                                            <li><a href="Categories.html">Horror</a></li>
+                                            <li><a href="Categories.html">Romance</a></li>
+                                            <li><a href="Categories.html">Anime</a></li>
+                                            <li><a href="Categories.html">Comedy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
+                                    <li><a href="GioHang.html">Cart</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="header__right">
+                          <div class="container">                   
+                            <a href="#"><span class="fas fa-search"></span></a> 
+                            <a href="Login.html"><span class="fas fa-sign-in-alt"></span></a>
+                          </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="normal-breadcrumb set-bg" data-setbg="Images/BackgroundTrangchu.jpg" style="background-image: url(Images/BackgroundTrangchu.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="normal__breadcrumb__text">
+                            <h2>Đăng nhập</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="spad1">
+                <div id="logreg-forms">
+                    <form class="form-signin">
+                        <div class="social-login">
+                            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</span></button>
+                            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Đăng nhập bằng Google+</span></button>
+                        </div>
+                        <p style="text-align:center"> Hoặc  </p>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Địa chỉ Email" required="" autofocus="">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Mật khẩu" required="">
+                        
+                        <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Đăng nhập</button>
+                        <a href="#" id="forgot_pswd">Quên mật khẩu?</a>
+                        <hr>
+                        <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Đăng kí tài khoản</button>
+                    </form>            
+                    <form action="/reset/password/" class="form-reset">
+                        <input type="email" id="resetEmail" class="form-control" placeholder="Địa chỉ Email" required="" autofocus="">
+                        <button class="btn btn-primary btn-block" type="submit">Cấp lại mật khẩu</button>
+                        <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Trở lại</a>
+                    </form>                        
+                    <form action="/signup/" class="form-signup">
+                        <div class="social-login">
+                            <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Đăng kí bằng Facebook</span> </button>
+                        </div>
+                        <div class="social-login">
+                            <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Đăng kí bằng Google+</span> </button>
+                        </div>                            
+                        <p style="text-align:center">Hoặc</p>
+            
+                        <input type="text" id="user-name" class="form-control" placeholder="Họ và Tên" required="" autofocus="">
+                        <input type="email" id="user-email" class="form-control" placeholder="Địa chỉ Email" required autofocus="">
+                        <input type="password" id="user-pass" class="form-control" placeholder="Mật Khẩu" required autofocus="">
+                        <input type="password" id="user-repeatpass" class="form-control" placeholder="Nhập lại mật khẩu" required autofocus="">
+            
+                        <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Đăng kí</button>
+                        <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Trở lại</a>
+                    </form>
+                    <br>
+                </div>
+        </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="./Images/logo.png" width="100px" height="70px" ></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer__nav">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="Categories.html">Categories</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="GioHang.html">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <p style="color: rgba(141, 133, 133, 0.7);">
+                      Trang web này được làm bởi <br><i class="fas fa-star" aria-hidden="true"></i><a href="#">Logg_GiaggInc</a><i class=" fas fa-star"></i>
+                     </p>
+      
+                  </div>
+              </div>
+          </div>
+      </footer>
+    </body>
+</html>
+    

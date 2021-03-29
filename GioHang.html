@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="CSS/Style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/cart.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></scrip>
+    <scrip src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></scrip>
+    <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></scrip>
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></scrip>
+    <scrip src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></scrip>
+</head>  
+  <body id="bodycart">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo ">
+                        <a href="index.html">
+                            <img src="./Images/logo.png"  class="header__logo ">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="Categories.html">Categories</a>
+                                    <ul class="dropdown">
+                                        <li><a href="Categories.html">Action</a></li>
+                                        <li><a href="Categories.html">Horror</a></li>
+                                        <li><a href="Categories.html">Romance</a></li>
+                                        <li><a href="Categories.html">Anime</a></li>
+                                        <li><a href="Categories.html">Comedy</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="FAQ.html">FAQ</a></li>
+                                <li class="active"><a href="GioHang.html">Cart</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                      <div class="container">                   
+                        <a href="#"><span class="fas fa-search"></span></a> 
+                        <a href="Login.html"><span class="fas fa-sign-in-alt"></span></a>
+                      </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="basket">
+          <div class="basket-module">
+            <input id="promo-code" type="text" name="promo-code" maxlength="15" class="promo-code-field" placeholder="Enter Promo Code">
+            <button class="promo-code-cta">Apply</button>
+          </div>
+          <div class="basket-labels">
+            <ul>
+              <li class="item item-heading">Item</li>
+              <li class="price">Price</li>
+              <li class="quantity">Quantity</li>
+              <li class="subtotal">Subtotal</li>
+            </ul>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="./Images/Otther/18.png" alt="Placholder Image 2" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">The Resident</span></strong></h1>
+                <p><strong>Horror | Movie</strong></p>
+                <p>Product Code: <strong>4141412</strong></p>
+              </div>
+            </div>
+            <div class="price">2.00</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">2.00</div>
+            <div class="remove">
+              <button>Remove</button>
+            </div>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="./Images/Otther/9.png" alt="Placholder Image 2" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">The Croods: A New Age</span></strong></h1>
+                <p><strong>Comedy | Anime | Movie</strong></p>
+                <p>Product Code: <strong>1231234</strong> </p>
+              </div>
+            </div>
+            <div class="price">6.00</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">6.00</div>
+            <div class="remove">
+              <button>Remove</button>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="summary">
+            <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+            <div class="summary-subtotal">
+              <div class="subtotal-title">Subtotal</div>
+              <div class="subtotal-value final-value" id="basket-subtotal">8.00</div>
+              <div class="summary-promo hide">
+                <div class="promo-title">Promotion</div>
+                <div class="promo-value final-value" id="basket-promo"></div>
+              </div>
+            </div>
+            <div class="summary-delivery">
+              <select name="delivery-collection" class="summary-delivery-selection">
+                  <option value="0" selected="selected">Select Collection or Delivery</option>
+                 <option value="first-class">Fast Delivery</option>
+                 <option value="second-class">Ship COD</option>
+                 <option value="signed-for">Mail Delivery</option>
+              </select>
+            </div>
+            <div class="summary-total">
+              <div class="total-title">Total</div>
+              <div class="total-value final-value" id="basket-total">8.00</div>
+            </div>
+            <div class="summary-checkout">
+              <button class="checkout-cta">Go to Secure Checkout</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+  <footer class="footer">
+    <div class="page-up">
+          <a href="#" id="scrollToTopButton"><span class="fas fa-sort-up"></span></a>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="footer__logo">
+                  <a href="./index.html"><img src="./Images/logo.png" width="100px" height="70px" ></a>
+              </div>
+          </div>
+            <div class="col-lg-6">
+                <div class="footer__nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="Categories.html">Categories</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="GioHang.html">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+              <p style="color: rgba(141, 133, 133, 0.7);">
+                      Trang web này được làm bởi <br><i class="fas fa-star" aria-hidden="true"></i><a href="#">Logg_GiaggInc</a><i class=" fas fa-star"></i>
+               </p>
+
+            </div>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
